@@ -83,8 +83,8 @@
 
         void setup()
         {
-            unity_ObjectToWorld = _LocalToWorld;
-            unity_WorldToObject = _WorldToLocal;
+            //unity_ObjectToWorld = _LocalToWorld;
+            //unity_WorldToObject = _WorldToLocal;
         }
 
         void surf(Input IN, inout SurfaceOutputStandard o)
