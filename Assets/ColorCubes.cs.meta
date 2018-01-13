@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e4e42f2517796cc4e942e7ebbdc33ef4
+timeCreated: 1515827786
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _ComputeShader: {fileID: 7200000, guid: 8306a12e4f67726439751a3519796a24, type: 3}
+  - _CubeMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  - _CubeMaterial: {fileID: 2100000, guid: 7c0c6f40b4f1e994fbdff67918ac5c59, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
