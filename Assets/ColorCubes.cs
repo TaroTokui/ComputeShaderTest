@@ -125,10 +125,7 @@ public class ColorCubes : MonoBehaviour
     {
         Application.targetFrameRate = 90;
     }
-
-    /// <summary>
-    /// 初期化
-    /// </summary>
+    
     void Start()
     {
         _instanceCount = _instanceCountX * _instanceCountY;
@@ -151,10 +148,7 @@ public class ColorCubes : MonoBehaviour
         this._CubeDataBuffer.SetData(cubeDataArr);
         cubeDataArr = null;
     }
-
-    /// <summary>
-    /// 毎フレーム更新
-    /// </summary>
+    
     void Update()
     {
         // ComputeShader
@@ -174,10 +168,7 @@ public class ColorCubes : MonoBehaviour
         this._CubeMaterial.SetVector("_CubeMeshScale", this._CubeMeshScale);
         Graphics.DrawMeshInstancedIndirect(this._CubeMesh, 0, this._CubeMaterial, new Bounds(this._BoundCenter, this._BoundSize), this._GPUInstancingArgsBuffer);
     }
-
-    /// <summary>
-    /// 破棄
-    /// </summary>
+    
     void OnDestroy()
     {
         if (this._CubeDataBuffer != null)
