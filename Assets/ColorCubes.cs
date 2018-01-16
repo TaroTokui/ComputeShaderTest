@@ -74,21 +74,21 @@ public class ColorCubes : MonoBehaviour
     Vector3 _BoundSize = new Vector3(300f, 300f, 300f);
 
     /// <summary>
-    /// アニメーション速度
+    /// 位相差
     /// </summary>
     [Range(-Mathf.PI, Mathf.PI)]
     [SerializeField]
     float _Phi = Mathf.PI;
 
     /// <summary>
-    /// アニメーション速度
+    /// 周期
     /// </summary>
     [Range(0.01f, 100)]
     [SerializeField]
     float _Lambda = 1;
 
     /// <summary>
-    /// アニメーション速度
+    /// キューブの上下の振れ幅
     /// </summary>
     [SerializeField]
     float _Amplitude = 1;
@@ -97,10 +97,7 @@ public class ColorCubes : MonoBehaviour
 
     // ==============================
     #region // Private Fields
-
-    /// <summary>
-    /// ドカベンロゴのバッファ
-    /// </summary>
+        
     ComputeBuffer _CubeDataBuffer;
 
     /// <summary>
